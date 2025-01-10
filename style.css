@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(19, 14, 24, 0.959);
+    color: rgb(255, 255, 255);
+}
+
+main {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    font-style: italic;
+}
+
+.peso, .altura, .resultado .calc {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    text-size-adjust: 32px;
+}
+input, button {
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center; 
+    font-style: italic;  
+} 
+button {
+    background-color: rgb(39, 5, 68);
+    color: white;
+    align-items: center;
+    height: 42px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 60%;
+    max-width: 560px;
+    cursor: pointer;
+    margin-bottom: 18px;
+    transition: background-color 0.7s linear;
+}
+
+button:hover {
+    background-color: #7f0beb;
+}
+
+@media (max-width: 500px) {
+    body, input, button {
+        font-size: 15px;
+    }
+}
